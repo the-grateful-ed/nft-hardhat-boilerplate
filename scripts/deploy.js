@@ -10,7 +10,7 @@ async function main() {
   console.log('NFT deployed to:', nft.address)
 
   fs.writeFileSync(
-    './../../nft-frontend/src',
+    './../../nft-frontend/src/utils/contractAddress.js',
     `export const nftAddress = "${nft.address}"`
   )
 }
