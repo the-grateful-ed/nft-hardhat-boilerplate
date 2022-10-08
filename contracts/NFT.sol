@@ -11,8 +11,8 @@ contract NFT is ERC721, PullPayment, Ownable {
   using Counters for Counters.Counter;
 
   // Constants
-  uint256 public constant TOTAL_SUPPLY = 1_420;
-  uint256 public constant MINT_PRICE = 0.001 ether;
+      string public commonTokenURI;
+    uint256 public mintCost;
 
   Counters.Counter private currentTokenId;
 
